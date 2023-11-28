@@ -12,10 +12,10 @@ String player1 = collector.nextLine();
 System.out.print("Enter player two name: ");
 String player2 = collector.nextLine();
 
-System.out.printf("%s enter a number 0, 1, 2: ",player1);
+System.out.printf("%s enter a number 0, 1, 2: ", player1);
 int player1Hand = collector.nextInt();
 
-System.out.printf("%s enter a number 0, 1, 2: ",player2);
+System.out.printf("%s enter a number 0, 1, 2: ", player2);
 int player2Hand = collector.nextInt();
 
 if ((player1Hand == 0) && (player2Hand == 0)) {

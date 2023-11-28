@@ -26,55 +26,55 @@ String month11 = "November";
 String month12 = "December";
 
 if (month == 1) {
-System.out.printf("%s %d has 31 days",month1,year);
+System.out.printf("%s %d has 31 days", month1, year);
 }
 
 if ((month == 2) && (year % 4 != 0)) {
-System.out.printf("%s %d has 28 days",month2,year);
+System.out.printf("%s %d has 28 days", month2, year);
 }
 
 if ((month == 2) && (year % 4 == 0)) {
-System.out.printf("%s %d has 29 days",month2,year);
+System.out.printf("%s %d has 29 days", month2, year);
 }
 
 if (month == 3) {
-System.out.printf("%s %d has 31 days",month3,year);
+System.out.printf("%s %d has 31 days", month3, year);
 }
 
 if (month == 4) {
-System.out.printf("%s %d has 30 days",month4,year);
+System.out.printf("%s %d has 30 days", month4, year);
 }
 
 if (month == 5) {
-System.out.printf("%s %d has 31 days",month5,year);
+System.out.printf("%s %d has 31 days", month5, year);
 }
 
 if (month == 6) {
-System.out.printf("%s %d has 30 days",month6,year);
+System.out.printf("%s %d has 30 days", month6, year);
 }
 
 if (month == 7) {
-System.out.printf("%s %d has 31 days",month7,year);
+System.out.printf("%s %d has 31 days", month7, year);
 }
 
 if (month == 8) {
-System.out.printf("%s %d has 31 days",month8,year);
+System.out.printf("%s %d has 31 days", month8, year);
 }
 
 if (month == 9) {
-System.out.printf("%s %d has 30 days",month9,year);
+System.out.printf("%s %d has 30 days", month9, year);
 }
 
 if (month == 10) {
-System.out.printf("%s %d has 31 days",month10,year);
+System.out.printf("%s %d has 31 days", month10, year);
 }
 
 if (month == 11) {
-System.out.printf("%s %d has 30 days",month11,year);
+System.out.printf("%s %d has 30 days", month11, year);
 }
 
 if (month == 12) {
-System.out.printf("%s %d has 31 days",month12,year);
+System.out.printf("%s %d has 31 days", month12, year);
 }
 
 }
