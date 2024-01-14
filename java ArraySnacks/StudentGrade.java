@@ -279,7 +279,7 @@ public class StudentGrade {
 		
 		return lowestScoringGrade;		
 	
-	}////////////////////////////////////////////////////////////////////////////////////////////// remove things extra variables
+	}
 
 	public int subjectLowestStudent(int subject) {
 
@@ -493,7 +493,7 @@ public class StudentGrade {
 
 		return averageScore;
 	}
-//////////////////////////////////////////////////////////////////////////////////////////issues++
+
 	public int bestGraduatingScore() {
 	
 		int bestGraduatingScore = 0;
