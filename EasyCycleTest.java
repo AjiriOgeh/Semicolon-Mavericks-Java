@@ -8,7 +8,7 @@ public class EasyCycleTest {
     private EasyCycle herCycle;
 
     @BeforeEach
-    void testSetEasyCycle() {
+    void testSetEasyCycleInstanceVariableMethods() {
 
         herCycle = new EasyCycle();
 
@@ -21,6 +21,14 @@ public class EasyCycleTest {
         assertThrows(IllegalArgumentException.class, () -> herCycle.setLengthOfPeriod(10));
         herCycle.setLengthOfPeriod(5);
 
+    }
+    @Test
+    void testGetName() {
+
+        String expectedOutput = "Jane Doe";
+        herCycle.setName("Jane Doe");
+        String actualOutput = herCycle.getName();
+        assertEquals(expectedOutput, actualOutput);
     }
 
     @Test
@@ -84,5 +92,5 @@ public class EasyCycleTest {
         assertEquals(expectedOutput, actualOutput);
 
     }
-
+    
 }

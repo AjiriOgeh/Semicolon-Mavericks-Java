@@ -16,7 +16,9 @@ public class EasyCycle {
     }
     public void setDaysSinceLastPeriod(int daysSinceLastPeriod) {
         if(daysSinceLastPeriod < 0 || daysSinceLastPeriod > 35) {
-           throw new IllegalArgumentException("You need to see a doctor");
+           throw new IllegalArgumentException("""
+                    The number of days you have not seen your period is unusual.
+                    Please consult a healthcare professional""");
         }
         this.daysSinceLastPeriod = daysSinceLastPeriod;
     }
@@ -25,7 +27,9 @@ public class EasyCycle {
     }
     public void setLengthOfCycle(int lengthOfCycle) {
         if(lengthOfCycle < 21 || lengthOfCycle > 35) {
-            throw new IllegalArgumentException("You need to see a doctor");
+            throw new IllegalArgumentException("""
+                    Your menstrual cycle falls outside the typical range.
+                    Please consult a healthcare professional""");
         }
 
         this.lengthOfCycle = lengthOfCycle;
@@ -35,7 +39,9 @@ public class EasyCycle {
     }
     public void setLengthOfPeriod(int lengthOfPeriod) {
         if(lengthOfPeriod < 2 || lengthOfPeriod > 7) {
-            throw new IllegalArgumentException("You need to see a doctor");
+            throw new IllegalArgumentException("""
+                    Your menstrual period falls outside the typical range.
+                    Please consult a healthcare professional""");
         }
         this.lengthOfPeriod = lengthOfPeriod;
     }
