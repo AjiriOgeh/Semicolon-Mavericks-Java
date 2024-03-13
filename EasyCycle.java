@@ -4,24 +4,32 @@ import java.time.format.DateTimeFormatter;
 public class EasyCycle {
     private String name;
     private int daysSinceLastPeriod;
+
+    private String dateOfPeriod;
     private int lengthOfCycle;
     private int lengthOfPeriod;
     private static final LocalDate localDate = LocalDate.now();
-    private static final DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("MMMM dd yyy");
+    private static final DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     public void setName(String name) {
         this.name = name;
     }
     public String getName() {
         return name;
     }
-    public void setDaysSinceLastPeriod(int daysSinceLastPeriod) {
-        if(daysSinceLastPeriod < 0 || daysSinceLastPeriod > 35) {
-           throw new IllegalArgumentException("""
-                    The number of days you have not seen your period is unusual.
-                    Please consult a healthcare professional""");
-        }
-        this.daysSinceLastPeriod = daysSinceLastPeriod;
+//    public void setDaysSinceLastPeriod(int daysSinceLastPeriod) {
+//        if(daysSinceLastPeriod < 0 || daysSinceLastPeriod > 35) {
+//           throw new IllegalArgumentException("""
+//                    The number of days you have not seen your period is unusual.
+//                    Please consult a healthcare professional""");
+//        }
+//        this.daysSinceLastPeriod = daysSinceLastPeriod;
+//    }
+    public LocalDate setDateOfPeriod(String dateOfPeriod){
+
+
     }
+
+
     public int getDaysSinceLastPeriod() {
         return daysSinceLastPeriod;
     }
@@ -60,7 +68,7 @@ public class EasyCycle {
         String lastPeriodDate = localDate.plusDays(lengthOfCycle - daysSinceLastPeriod + lengthOfPeriod).format(dateFormat);
         return lastPeriodDate;
     }
-    public String getOvulationDate() {
+    public String getOvulationDate() { // change date from the front
         String ovulationDate = localDate.plusDays((lengthOfCycle * 2L) - daysSinceLastPeriod - 14).format(dateFormat);
         return ovulationDate;
     }
@@ -73,7 +81,7 @@ public class EasyCycle {
         return safePeriodLastDate;
     }
     public String getFirstFertileDate() {
-        String firstFertileDate =localDate.plusDays((lengthOfCycle * 2L) - daysSinceLastPeriod - 19).format(dateFormat);
+        String firstFertileDate = localDate.plusDays((lengthOfCycle * 2L) - daysSinceLastPeriod - 19).format(dateFormat);
         return firstFertileDate;
     }
     public String getLastFertileDate() {

@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class EasyCycleApp {
@@ -53,7 +54,7 @@ public class EasyCycleApp {
                     System.out.println();
 
                     System.out.printf("Period in %d days time%n", easyCycle.getNumberOfDaysToNextPeriod());
-                    System.out.printf("-Your next period will start on %s and end on %s%n", easyCycle.getNextPeriodDate(), easyCycle.getLastPeriodDate());
+                    System.out.printf("-Your next period will likely start on %s and end on %s%n", easyCycle.getNextPeriodDate(), easyCycle.getLastPeriodDate());
                     System.out.printf("-Next ovulation date is on %s%n", easyCycle.getOvulationDate());
                     System.out.printf("-Best chance of getting pregnant is between %s to %s%n", easyCycle.getFirstFertileDate(), easyCycle.getLastFertileDate());
                     System.out.printf("-Your safe window is between %s to %s%n", easyCycle.getSafePeriodFirstDate(), easyCycle.getSafePeriodLastDate());
